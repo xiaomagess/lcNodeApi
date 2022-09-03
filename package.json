@@ -1,0 +1,69 @@
+{
+  "name": "lc_nft",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "egg": {
+    "declarations": true
+  },
+  "dependencies": {
+    "@ethersproject/contracts": "^5.4.1",
+    "@ethersproject/providers": "^5.4.5",
+    "@ethersproject/solidity": "^5.4.0",
+    "@truffle/contract": "^4.5.14",
+    "@uniswap/sdk": "^3.0.3",
+    "bignumber": "^1.1.0",
+    "crypto-js": "^4.1.1",
+    "egg": "^2.15.1",
+    "egg-cors": "^2.2.3",
+    "egg-email": "^1.0.2",
+    "egg-lodash": "^1.0.1",
+    "egg-mongoose": "^3.3.1",
+    "egg-oss": "^2.0.0",
+    "egg-redis": "^2.4.0",
+    "egg-scripts": "^2.11.0",
+    "ethers": "^5.6.8",
+    "imageinfo": "^1.0.4",
+    "keccak256": "^1.0.6",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
+    "shortid": "^2.2.16",
+    "web3": "^1.5.3",
+    "web3-providers-ws": "^1.7.3"
+  },
+  "devDependencies": {
+    "autod": "^3.0.1",
+    "autod-egg": "^1.1.0",
+    "egg-bin": "^4.11.0",
+    "egg-ci": "^1.11.0",
+    "egg-mock": "^3.22.2",
+    "eslint": "^5.13.0",
+    "eslint-config-egg": "^7.1.0"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "scripts": {
+    "start": "egg-scripts start --daemon --title=egg-test_lc_nft --ignore-stderr",
+    "jk-start": "egg-scripts start --title=egg-test_lc_nft --ignore-stderr",
+    "stop": "egg-scripts stop --title=egg-test_lc_nft",
+    "dev": "egg-bin dev --workers=3",
+    "debug": "egg-bin debug",
+    "test": "npm run lint -- --fix && npm run test-local",
+    "initTestFiles": "node ./initTestFiles.js",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov",
+    "autod": "autod"
+  },
+  "ci": {
+    "version": "10"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "MIT"
+}
