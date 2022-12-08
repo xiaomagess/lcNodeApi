@@ -12,6 +12,7 @@
  */
 
 module.exports = app => {
+    
   //自定义内容
   // app.beforeStart(async() => {
   //   //应用会等待这个函数执行完成才启动
